@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cierralasesion</title>
+</head>
+<body>
+    <h3>Bienvenido admin :u</h3>
+<br>
+<button type="button" id="btnlogout">Cerrar Sesion</button>
+
+<h3>Crear nuevo usuario</h3>
+<form id="formRegister">
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <input type="text" id="nombreCompleto" placeholder="Nombre completo" required>
+    <input type="text" id="cedula" placeholder="Cédula" required>
+    <input type="text" id="telefono" placeholder="Teléfono" required>
+    <input type="text" id="direccion" placeholder="Dirección" required>
+    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+    <button type="submit" id="crear">Crear</button>
+</form>
+<h3>Ver lista de usuarios</h3>
+<button type="submit" id="ver">Ver</button>
+
+<h3>Eliminar Cuenta</h3>
+<button type="button" id="eliminar">Eliminar Cuenta</button>
+<script type="module" src="../Controllers/home_admin.js"></script>
+
+</body>
+</html>
