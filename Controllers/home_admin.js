@@ -7,7 +7,7 @@ const formCreateUser = document.getElementById('formRegister')
 const mirar = document.getElementById('ver')
 
 mirar.addEventListener('click', function(){
-    window.location.href = "/Templates/lista.html"
+    window.location.href = "./Templates/lista.html"
 })
 
 async function cerrarsesion(){
