@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             isAdmin: false  
         });
 
-        window.location.href = "/Templates/home.html";
+        window.location.href = "./Templates/home.html";
     });
 });

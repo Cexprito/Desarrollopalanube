@@ -48,15 +48,15 @@ export const validarGoogle = async () => {
 
     if (!docSnap.exists()) {
         // Si el documento del usuario no existe en Firestore, redirige al usuario a la página de completar registro
-        window.location.href = "/Templates/completar_registro.html";
+        window.location.href = "./Templates/completar_registro.html";
     } else {
         // Si el documento del usuario ya existe en Firestore, verifica si el usuario es un administrador
         if (docSnap.data().isAdmin) {
             alert("Usuario autenticado como administrador: " + user.email)
-            window.location.href = "/Templates/home_admin.html"
+            window.location.href = "./Templates/home_admin.html"
         } else {
             alert("Usuario autenticado: " + user.email)
-            window.location.href = "/Templates/home.html"
+            window.location.href = "./Templates/home.html"
         }
     }
 }
@@ -67,7 +67,7 @@ async function validarFacebook(){
 
     if(verificar != null){
         alert("Usuario autenticado con Facebook")
-        window.location.href = "../Templates/home.html"
+        window.location.href = "./Templates/home.html"
     }else{
         console.log("Sesion Facebook not validation")
         alert("Error de usuario verifique usuario y/o contraseña")

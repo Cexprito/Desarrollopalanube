@@ -7,7 +7,7 @@ const recuperar = document.getElementById('recuperar')
 const eliminar = document.getElementById('eliminar')
 
 recuperar.addEventListener('click', function(){
-    window.location.href = "/Templates/recuperar_contrasena.html"
+    window.location.href = "./Templates/recuperar_contrasena.html"
 })
 
 async function cerrarsesion(){

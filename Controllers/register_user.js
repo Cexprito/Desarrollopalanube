@@ -33,7 +33,7 @@ async function register() {
       isAdmin: false,
     });
 
-    window.location.href = "/loginn.html";
+    window.location.href = "./loginn.html";
   } catch (error) {
     alert("no sucessfull");
     const errorCode = error.code;
