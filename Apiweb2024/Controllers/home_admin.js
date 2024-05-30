@@ -42,6 +42,7 @@ async function createUser(event) {
 
         const userDoc = doc(db, 'users', user.uid); 
         await setDoc(userDoc, {
+            id: id,
             nombreCompleto: nombreCompleto,
             cedula: cedula,
             telefono: telefono,
