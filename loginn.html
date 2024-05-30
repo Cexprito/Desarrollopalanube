@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesion</title>
+  <link rel="stylesheet" href="Css/meroestilomirey.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar sesion</h2>
+    <div class="input-group">
+      <label for="email">Nombre de usuario</label>
+      <input type="text" id="email" placeholder="Ingresa tu nombre de usuario">
+    </div>
+    <div class="input-group">
+      <label for="password">Contrasena</label>
+      <input type="password" id="password" placeholder="Ingresa tu contrasena">
+    </div>
+    <button type="submit" id= "boton_n" >Iniciar sesion</button>
+  </div>
+    <div class="card-footer">
+     <div class="d-flex justify-content-center links">
+          No tienes una cuenta?<a href="Templates/registro.html">Registrate</a>
+          <p class="footer"><a href="Templates/recuperar_contrasena.html" class="link">¿Olvidaste tu contraseña?</a></p>
+          <button type="submit" class="submit google" id="google_login_btn">Google</button>
+          <button class="submit new-button" id="facebook_login_btn">Facebook</button>
+      </div>
+  <script type="module" src="Controllers/authentication.js"></script>
+ 
+</body>
+</html>

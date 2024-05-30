@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="../Css/registro.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <form id="registroForm">
+            
+            <label for="nombreCompleto">Nombre Completo:</label><br>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" required><br>
+
+            <label for="cedula">Cédula:</label><br>
+            <input type="text" id="cedula" name="cedula" required><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br>
+
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="veremail" name="email" required><br>
+
+            <label for="confirmarEmail">Confirmar Correo Electrónico:</label><br>
+            <input type="email" id="confirmarEmail" name="confirmarEmail" required><br>
+
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="verpassword" name="contraseña" required><br>
+
+            <label for="confirmarContraseña">Confirmar Contraseña:</label><br>
+            <input type="password" id="confirmarContraseña" name="confirmarContraseña" required><br>
+
+            <input type="submit" id="btnregister" value="Register"  class="btn btn-primary">
+        </form>
+    </div>
+    <script src="../Controllers/validacion.js"></script> 
+    <script type="module" src="../Controllers/register_user.js"></script>
+</body>
+</html>
