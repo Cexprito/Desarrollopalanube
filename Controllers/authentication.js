@@ -24,10 +24,10 @@ async function validar(){
 
             if (docSnap.exists() && docSnap.data().isAdmin) {
                 alert("Usuario autenticado como administrador: " + email)
-                window.location.href = "/Templates/home_admin.html"
+                window.location.href = "./Templates/home_admin.html"
             } else {
                 alert("Usuario autenticado: " + email)
-                window.location.href = "/Templates/home.html"
+                window.location.href = "./Templates/home.html"
             }
         }else{
             console.log("Sesion "+ email + " not validation")
